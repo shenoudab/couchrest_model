@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require "couchrest/model/version"
+require "/lib/couchrest/model/version"
 
 Gem::Specification.new do |s|
   s.name = %q{couchrest_model}
