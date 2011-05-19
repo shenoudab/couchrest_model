@@ -22,6 +22,8 @@ module CouchRest
       include CouchRest::Model::CastedBy
       include CouchRest::Model::Dirty
 
+      include ActiveModel::SecurePassword
+
       def self.subclasses
         @subclasses ||= []
       end
