@@ -1,0 +1,20 @@
+===============================================================================
+CouchrestModel initializer and configuration files :
+
+  config/initializers/couchdb.rb
+  config/couchdb.yml
+
+Here you can configuration your database connection in a Rails-like way:
+
+  development:
+    protocol: 'https'
+    host: sample.cloudant.com
+    port: 443
+    prefix: project
+    suffix: test
+    username: test
+    password: user
+
+Note that the name of the database is either just the prefix and suffix combined or the prefix plus any text you specifify using use_database method in your models with the suffix on the end.
+
+===============================================================================

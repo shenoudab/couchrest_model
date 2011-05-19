@@ -1,0 +1,25 @@
+development:
+  protocol: 'http'
+  host: localhost
+  port: 5984
+  prefix: <%= database_name || app_name %>
+  suffix: development
+  username: test
+  password: user
+
+test:
+  protocol: 'https'
+  host: sample.cloudant.com
+  port: 443
+  prefix: <%= database_name || app_name %>
+  suffix: test
+  username: test
+  password: user
+
+production:
+  protocol: 'https'
+  host: sample.cloudant.com
+  port: 443
+  prefix: <%= database_name || app_name %>
+  username: test
+  password: user

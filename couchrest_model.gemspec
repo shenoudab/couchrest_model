@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = %q{couchrest_model}
-  s.version = `cat VERSION`.strip
-
+  s.version = 'cat VERSION'.strip
+  
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber", "Sam Lown"]
   s.date = %q{2011-04-29}
@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Extends the CouchRest Document for advanced modelling.}
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.files         = 'git ls-files'.split("\n")
+  s.test_files    = 'git ls-files -- {test,spec,features}/*'.split("\n")
+  s.executables   = 'git ls-files -- bin/*'.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
   s.add_dependency(%q<couchrest>, "1.1.0.pre2")
