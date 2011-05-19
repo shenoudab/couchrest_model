@@ -1,5 +1,8 @@
 # -*- encoding: utf-8 -*-
-require "/lib/couchrest/model/version"
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require "couchrest/model/version"
 
 Gem::Specification.new do |s|
   s.name = %q{couchrest_model}
