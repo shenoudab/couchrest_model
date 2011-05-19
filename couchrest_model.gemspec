@@ -1,11 +1,8 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-
-require "couchrest/model/version"
 
 Gem::Specification.new do |s|
   s.name = %q{couchrest_model}
-  s.version = CouchRest::Model::VERSION.dup
+  s.version = `cat VERSION`.strip
   
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber", "Sam Lown"]
